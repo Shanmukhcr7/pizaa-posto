@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "./", // Correct repository name for GitHub Pages deployment
+  base: "./", // Use relative paths for GitHub Pages
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
@@ -21,4 +21,3 @@ export default defineConfig(({ mode }) => ({
     assetsDir: "assets",
   },
 }));
-
