@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "pizza-posto/", // Correct repository name for GitHub Pages deployment
+  base: "./", // Correct repository name for GitHub Pages deployment
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
@@ -21,3 +21,4 @@ export default defineConfig(({ mode }) => ({
     assetsDir: "assets",
   },
 }));
+
